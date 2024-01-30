@@ -77,11 +77,33 @@ const menu = [
       },
     ],
   },
-  // {
-  //   title: "Report Bug",
-  //   icon: <FaCommentAlt />,
-  //   path: "/contact-us",
-  // },
+
+  {
+    title: "Administrations",
+    icon: <i class="fa fa-user-circle-o" />,
+    childrens: [
+      {
+        title: "Users & Roles",
+        path: "/Users&Roles",
+      },
+      {
+        title: "Work shifts",
+        path: "/workshifts",
+      },
+      {
+        title: "Departments",
+        path: "/departments",
+      },
+      {
+        title: "Holiday",
+        path: "/holiday",
+      },
+      {
+        title: "Announcement",
+        path: "/announcement",
+      },
+    ],
+  },
 ];
 
 export default menu;

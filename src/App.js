@@ -1,11 +1,13 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/auth/Login";
 import Sidebar from "./components/sidebar/Sidebar";
-// import Sidebar from "./component/sidebar/Sidebar";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Layout from "./components/layout/Layout";
 import JobDesk from "./pages/jobdesk/Jobdesk";
+import Holiday from "./pages/holiday/Holiday";
+
 function App() {
   return (
     <div>
@@ -31,6 +33,18 @@ function App() {
               <Sidebar>
                 <Layout>
                   <JobDesk />
+                </Layout>
+              </Sidebar>
+            }
+          />
+
+          {/* -------------Holiday------------- */}
+          <Route
+            path="/holiday"
+            element={
+              <Sidebar>
+                <Layout>
+                  <Holiday />
                 </Layout>
               </Sidebar>
             }

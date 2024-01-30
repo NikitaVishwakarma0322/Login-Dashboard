@@ -1,0 +1,12 @@
+.btn-admin {
+  background-color: orangered !important;
+  border-color: orangered !important;
+  color: white;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+a {
+  text-decoration: none !important;
+}
